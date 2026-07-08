@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abinaya G Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar glass" id="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">✖</button>
+    <h2>Portfolio</h2>
+    <ul>
+      <li><a href="#home" class="active">🏠 Home</a></li>
+      <li><a href="#about">👩 About</a></li>
+      <li><a href="#skills">💻 Skills</a></li>
+      <li><a href="#projects">📂 Projects</a></li>
+      <li><a href="#contact">📞 Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Toggle Button (when sidebar is closed) -->
+  <button class="open-btn" id="openBtn" onclick="toggleSidebar()">☰</button>
+
+  <!-- Main Content -->
+  <div class="content">
+    <header class="glass">
+      <h1>Abinaya G</h1>
+      <p>Web Developer | UI Designer | Creative Thinker</p>
+    </header>
+
+    <!-- Sections -->
+    <section id="home" class="glass">
+      <h2>Welcome</h2>
+      <p>Explore my portfolio to learn more about my skills, projects, and experience.</p>
+    </section>
+
+    <section id="about" class="glass">
+      <h2>About Me</h2>
+      <img src="photo.jpg" alt="My Photo" class="profile-pic">
+      <p>Hello! I’m Abinaya G, an intermediate web developer skilled in HTML, CSS, JavaScript, and UI design. I enjoy building creative projects like calculators, landing pages, and themed websites.</p>
+    </section>
+
+    <section id="skills" class="glass">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card glass">Python</div>
+        <div class="card glass">Java</div>
+        <div class="card glass">HTML</div>
+        <div class="card glass">CSS</div>
+        <div class="card glass">JavaScript</div>
+      </div>
+    </section>
+
+    <section id="projects" class="glass">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card glass">
+          <h3>Healthcare Assistance using AI</h3>
+          <img src="healthcare.jpg" alt="Healthcare AI Project">
+          <p>An AI-powered system to assist patients with healthcare queries and monitoring.</p>
+        </div>
+        <div class="card glass">
+          <h3>Student Chatbot</h3>
+          <img src="student-ai.webp" alt="Student Chatbot Project">
+          <p>A chatbot designed to help students with academic queries and guidance.</p>
+        </div>
+        <div class="card glass">
+          <h3>Pressure Monitor using AI</h3>
+          <img src="pressure.webp" alt="Pressure Monitor Project">
+          <p>An AI-based tool to monitor and analyze pressure levels for healthcare applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="glass">
+      <h2>Resume</h2>
+      <p><a href="resume.pdf" download>Download My Resume (PDF)</a></p>
+    </section>
+
+    <section id="contact" class="glass">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:abinayaganesh76@gmail.com">abinayaganesh76@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+    </section>
+
+    <footer class="glass">
+      <p>&copy; 2026 Abinaya G. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript for sidebar toggle -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const openBtn = document.getElementById("openBtn");
+      sidebar.classList.toggle("hidden");
+      openBtn.classList.toggle("visible");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #FFDAB9; /* Peach */
+  color: #4B2E2B; /* Coffee Brown */
+}
+
+.hero {
+  background: url('images/cafe-banner.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 80px 20px;
+  color: #FFFFFF; /* White text */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #4B2E2B; /* Coffee Brown highlight */
+}
+
+.btn {
+  background: #4B2E2B; /* Coffee Brown */
+  color: #FFFFFF; /* White text */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about {
+  padding: 40px 20px;
+  text-align: center;
+  background: #FFDAB9; /* Peach */
+  border-radius: 10px;
+  margin: 20px;
+  color: #4B2E2B;
+}
+
+.about img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.menu {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #4B2E2B; /* Coffee Brown */
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(75, 46, 43, 0.4);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.specials {
+  padding: 40px 20px;
+  text-align: center;
+  background: #FFDAB9; /* Peach */
+  margin: 20px;
+  border-radius: 10px;
+  color: #4B2E2B;
+}
+
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: #4B2E2B; /* Coffee Brown */
+  margin: 20px;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+footer {
+  background: #4B2E2B; /* Coffee Brown */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+.navbar {
+  background: #4B2E2B; /* Coffee Brown */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: #FFDAB9; /* Peach */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: #FFDAB9; /* Peach */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #FFFFFF; /* White on hover */
+}
+
+body {
+  padding-top: 60px; /* Prevent content hiding behind fixed navbar */
+}

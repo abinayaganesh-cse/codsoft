@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="calculator-container glass">
+    <!-- Header -->
+    <header>
+      <h1>🧮 Smart Calculator</h1>
+      <p>Created by Abinaya</p>
+      <div id="clock"></div>
+    </header>
+
+    <!-- Display -->
+    <div class="display">
+      <div id="expression"></div>
+      <div id="result"></div>
+    </div>
+
+    <!-- Memory Buttons -->
+    <div class="memory-buttons">
+      <button class="btn" data-action="MC">MC</button>
+      <button class="btn" data-action="MR">MR</button>
+      <button class="btn" data-action="M+">M+</button>
+      <button class="btn" data-action="M-">M-</button>
+      <button class="btn" data-action="MS">MS</button>
+    </div>
+
+    <!-- Scientific Functions -->
+    <div class="scientific-buttons">
+      <button class="btn" data-action="sqrt">√</button>
+      <button class="btn" data-action="square">x²</button>
+      <button class="btn" data-action="inverse">1/x</button>
+      <button class="btn" data-action="percent">%</button>
+      <button class="btn" data-action="backspace">⌫</button>
+    </div>
+
+    <!-- Number Pad -->
+    <div class="buttons-grid">
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn operator" data-value="/">÷</button>
+
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn operator" data-value="*">×</button>
+
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn operator" data-value="-">-</button>
+
+      <button class="btn" data-action="sign">±</button>
+      <button class="btn" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn operator" data-value="+">+</button>
+
+      <button class="btn equal" data-action="calculate">=</button>
+    </div>
+
+    <!-- Extra Controls -->
+    <div class="extra-controls">
+      <button class="btn" id="theme-toggle">🌙 Theme</button>
+      <button class="btn" id="copy-result">📋 Copy</button>
+      <button class="btn" id="clear">C</button>
+    </div>
+
+    <!-- History -->
+    <section class="history">
+      <h2>History</h2>
+      <ul id="history-list"></ul>
+    </section>
+  </div>
+</body>
+</html>
